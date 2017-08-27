@@ -23,14 +23,18 @@ body a{
 }
 /*-----start-header----*/
 .bg{
-	background:url(../images/baner.jpg) no-repeat 0px 0px;
-	background-size:cover;
+	background:url(../images/baner-3cats.png) no-repeat 0px 0px;
+	background-size:100%;
+	margin-top:1.2cm;
 }
 .header{
+	position:relative;
+	top:-110px;
+	background-color:white;
 }
 .logo{
 	float: left;
-	margin-top: 0.6em;
+	margin-top: 1em;
 }
 .logo a{
 	color: #303030;
@@ -49,7 +53,7 @@ body a{
 	padding: 0.8em 0em;
 }
 .top-nav ul li a{
-	color: #FFF;
+	color:black;
 	padding: 0.2em 1.5em;
 	font-size: 0.9em;
 	font-weight: 400;
@@ -77,11 +81,12 @@ body a{
 nav {
 	position: relative;
 	float: right;
+	top:40px;
 }
 nav ul {
 	padding: 0;
 	float: right;
-	margin: 0.9em 0;
+	margin: 0.8em 0;
 }
 nav li {
 	display: inline;
@@ -207,7 +212,7 @@ nav a#pull {
 }
 /*---- services ----*/
 .services{
-	padding:3em 0;
+	padding:0em 0;
 }
 .service-head h2{
 	font-weight:900;
@@ -222,10 +227,22 @@ nav a#pull {
 	display:inline-block;
 }
 .service-grid span{
-	width:64px;
-	height:64px;
+	width:100px;
+	height:100px;
 	display:inline-block;
 	background:url(../images/services-icons.png) no-repeat 0px 0px;
+}
+.service-grid span.img1{
+	background:url(../images/intro-huasheng.png) no-repeat;
+	background-size: contain;
+}
+.service-grid span.img2{
+	background:url(../images/intro-dali.png) no-repeat;
+	background-size: contain;
+}
+.service-grid span.img3{
+	background:url(../images/intro-dadan.png) no-repeat;
+	background-size: contain;
 }
 .service-grid h3 a{
 	color: #222;
@@ -242,15 +259,7 @@ nav a#pull {
 	font-family: 'Open Sans', sans-serif;
 	line-height:1.7em;
 	color:#888888;
-}
-.service-grid span.service-icon1{
-	background-position:0px 0px;
-}
-.service-grid span.service-icon2{
-	background-position: -391px 2px;
-}
-.service-grid span.service-icon3{
-	background-position: -779px 4px;
+	text-align: justify;
 }
 .services-grids{
 	padding:3em 0;
@@ -286,6 +295,7 @@ nav a#pull {
 .e-left-inner-grid-right{
 	float:right;
 	width:85%;
+
 }
 .e-left-inner-grid{
 	width: 47%;
@@ -1399,4 +1409,7 @@ a.leran-more:hover{
 		width: 100%;
 		outline:none;
 	}
+}
+p.center{
+	text-align: center;
 }
